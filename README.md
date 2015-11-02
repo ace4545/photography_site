@@ -17,6 +17,7 @@ _______________________________________
 
 #Admin
 
+
 * [X] As an admin, I should be able to access and upload new photos to the site, including gallery photos.
 * [X] As an admin, I expect to be able to modify pictures and send users a direct link to their photosets with and without the watermark from the photographer.
 
