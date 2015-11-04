@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html>
+<%= stylesheet_link_tag "homes.scss" %>
 <head>
-  <title>Rae's Photography</title>
+  <h1>Rae's Photography</h1>
+
 </head>
 <body>
 <div id="topNav" data-content-field="navigation">
@@ -60,28 +61,28 @@
 
 
                   <li class="gallery-collection">
-                    <a href="/portrait/">portrait</a>
+                    <a ="/portrait/">portrait</a>
                   </li>
 
 
 
 
                   <li class="gallery-collection">
-                    <a href="/senior/">senior</a>
+                    <a ="/senior/">senior</a>
                   </li>
 
 
 
 
                   <li class="gallery-collection">
-                    <a href="/wedding/">wedding</a>
+                    <a ="/wedding/">wedding</a>
                   </li>
 
 
 
 
                   <li class="gallery-collection">
-                    <a href="/engagement/">engagement</a>
+                    <a ="/engagement/">engagement</a>
                   </li>
 
 
@@ -97,7 +98,7 @@
 
       <li class="page-collection">
 
-          <a href="/app/views/static_pages/contact.html.erb/">contact me here</a>
+          <%= link_to "contact", static_pages_contact_path %>
 
 
 
@@ -114,7 +115,7 @@
 
 
 
-            <a href="/prints/">prints(Not Available)</a>
+            <%= link_to "portraits(Not Available)",static_pages_portraits_path %>
 
 
 

@@ -13,3 +13,16 @@
  *= require_tree .
  *= require_self
  */
+body {
+  background-image: url(http://i.imgur.com/ZXGVR9z.jpg);
+  background-size: cover;
+
+}
+a {font-family: 'Pinyon Script', cursive
+
+}
+
+h1 {font-family: 'Pinyon Script', cursive, bold;
+  position: relative;
+  color: #800080;
+}

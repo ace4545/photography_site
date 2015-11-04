@@ -1,6 +1,6 @@
 class StaticPagesController < ApplicationController
   def contact
-    #redirect_to static_pages.contact
+
   end
 
   def portraits
