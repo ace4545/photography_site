@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   resources :galleries do
     resources :photos, shallow: true
   end
+
   resources :users, only: [:new, :create]
   resources :static_page, only: [:contact, :blog]
   # Create a better looking URL for logging in

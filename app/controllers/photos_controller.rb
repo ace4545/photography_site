@@ -1,5 +1,10 @@
 class PhotosController < ApplicationController
+  attr_accessible :show
+    belongs_to :user
+  end
   def create
+    if current_user.try(:admin?)
+    end
     @photo = Photo.new(photo_params)
     @photo.gallery_id = params[:gallery_id]
     if @photo.save
