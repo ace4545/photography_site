@@ -18,11 +18,33 @@ body {
   background-size: cover;
 
 }
-a {font-family: 'Pinyon Script', cursive
+li {font-family: 'Pinyon Script', cursive
 
 }
 
 h1 {font-family: 'Pinyon Script', cursive, bold;
   position: relative;
-  color: #800080;
+  color: #000;
+  text-shadow: 2px 2px #ff0000;
+
+}
+
+.main-nav li {
+  display: inline-block;
+}
+
+.add-photo {
+  border: 2px solid red;
+  padding: 5px;
+}
+
+.photo {
+  float: left;
+  text-align: center;
+}
+
+.watermark {
+  display: block;
+  clear: both;
+  text-align: right;
 }

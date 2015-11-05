@@ -10,7 +10,7 @@
 </head>
 <body>
 <p>
-<% if @current_user %>
+<% if current_user %>
     Welcome, <%= current_user.name %>
     &nbsp;&nbsp;|&nbsp;&nbsp;
     <%= link_to 'Logout', session_path('dummy'), method: :delete %>
@@ -20,7 +20,63 @@
     <%= link_to 'Sign Up', new_user_path %>
   <% end %>
 </p>
+<h1>Rae's Photography</h1>
+<div id="topNav" data-content-field="navigation">
+<nav class="main-nav">
+  <ul>
+    <li class="index-collection active-link">
+          <a href="/">home</a>
+    </li>
+    <li class="blog-collection">
+          <a href="//">blog</a>
+    </li>
+    <li class="page-collection">
+          <%= link_to "Who I Am",static_pages_who_I_am_path %>
+    </li>
+
+
+
+
+      <li class="page-collection">
+
+          <%= link_to "contact", static_pages_contact_path %>
+
+
+
+
+
+
+
+      </li>
+
+      <li class="products-collection">
+
+
+
+
+            <%= link_to "portraits(Not Available)",static_pages_portraits_path %>
+
+
+      </li>
+
+
+
+      <li class="">
+
+
+            <a href="https://www.facebook.com/previewgallery21/" target="_blank">facebook</a>
+
+
+
+
+
+      </li>
+
+
+</ul>
+</nav>
+</div>
 <%= yield %>
-<a> Rae's Photography</a>
+<a class="watermark">Rae's Photography</a>
 </body>
 </html>

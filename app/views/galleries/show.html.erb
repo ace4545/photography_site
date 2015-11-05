@@ -1,0 +1,17 @@
+<h1>Gallery <%= @gallery.name %></h1>
+<div class="add-photo">
+  <%= form_for [@gallery, @photo] do |f| %>
+    Photo Description
+    <%= f.text_field :description %> &nbsp;&nbsp;
+    URL
+    <%= f.text_field :url %> &nbsp;&nbsp;
+    <%= f.submit "Add Photo" %>
+  <% end %>
+</div>
+<hr>
+<% @photos.each do |photo| %>
+  <div class="photo">
+    <%= image_tag(photo.url, width: "300") %>
+    <h3><%= photo.description %></h3>
+  </div>
+<% end %>
