@@ -29,9 +29,28 @@ h3 {
 
 li {
   font-size: 25px;
-  color: #040404;
-  text-shadow: 2px 2px #ff0000;
+  color: #000000;
+  text-shadow: 1px 1px #ff0000;
   border-width: 50px;
   border-color: #6600CC;
+  padding-bottom: 20px;
+  background-color: rgba(204,204,204,0.3);
+
+}
+.facebook{
+  border-style: double;
+  border-width: 5px;
+  border-color: #6600CC;
+  margin-top: 10px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+
 }
 
+p {
+  font-size: 20px;
+  color: #040404;
+  background-color: #A9A9A9;
+  padding: 5px;
+  position: center;
+}
