@@ -14,6 +14,17 @@ class PhotosController < ApplicationController
     photo.destroy
     redirect_to gallery_path(photo.gallery_id)
   end
+  def edit
+    @photo = Photo.find(params[:id])
+  end
+  def update
+    @photo = Photo.find(params[:id])
+    if @photo.update(params[:description, :url])
+      redirect_to gallery_path(params[:gallery_id])
+    else
+      render :action => 'edit'
+    end
+  end
 
   private
     # Implement Strong Params
