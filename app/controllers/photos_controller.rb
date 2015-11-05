@@ -9,6 +9,12 @@ class PhotosController < ApplicationController
     end
   end
 
+  def destroy
+    photo = Photo.find(params[:id])
+    photo.destroy
+    redirect_to gallery_path(photo.gallery_id)
+  end
+
   private
     # Implement Strong Params
     def photo_params
