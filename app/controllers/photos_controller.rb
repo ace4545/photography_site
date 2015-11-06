@@ -1,6 +1,5 @@
 class PhotosController < ApplicationController
-  attr_accessible :show
-    belongs_to :user
+
 
   def create
     if current_user.try(:admin?)
