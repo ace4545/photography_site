@@ -18,11 +18,12 @@ body {
   background-size: cover;
 
 }
-li {font-family: 'Pinyon Script', cursive
+li {font-family: 'Pinyon Script', cursive;
 
 }
 
-h1 {font-family: 'Pinyon Script', cursive, bold;
+h1 {
+  font-family: 'Pinyon Script', cursive, bold;
   position: relative;
   color: #000;
   text-shadow: 2px 2px #ff0000;
@@ -45,12 +46,13 @@ h1 {font-family: 'Pinyon Script', cursive, bold;
 }
 
 .watermark {
+  font-family: 'Pinyon Script', cursive, bold;
   display: block;
   clear: both;
   text-align: right;
   padding: 10px;
-  color: black;
-  text-shadow: 2px 2px #ff0000;
+  color: purple;
+  text-shadow: 1px 1px #ff0000;
   background-color: #A9A9A9;
   background-size: 5px auto;
   background-position: inherit;
@@ -60,4 +62,8 @@ a {
     color: black;
     background-color: #A9A9A9;
     padding: 2px;
+}
+p {
+  background-color: #A9A9A9;
+  background-color: rgba(204,204,204,0.4);
 }
