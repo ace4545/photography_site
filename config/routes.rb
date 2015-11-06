@@ -5,7 +5,7 @@ Rails.application.routes.draw do
 
   get 'static_pages/who_I_am'
 
-  get 'static_pages/blog'
+  get 'static_pages/information'
 
   root 'homes#index'
   resources :homes
