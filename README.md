@@ -54,7 +54,12 @@ ____
 * bootsrap
 * HTML
 * CSS
+* Trello
 
 _____
 
 #Next Steps
+
+*  Add an admin System so that only Admins can edit, add, and delete pictures.
+*  Make it so that each user has a personal gallery from the Photographer with the photos of the user.
+*  Add a PDF download system for the contract and waiver of release
