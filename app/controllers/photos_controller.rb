@@ -1,7 +1,7 @@
 class PhotosController < ApplicationController
   attr_accessible :show
     belongs_to :user
-  end
+
   def create
     if current_user.try(:admin?)
     end
@@ -36,4 +36,4 @@ class PhotosController < ApplicationController
     def photo_params
       params.require(:photo).permit(:description, :url)
     end
-
+end
