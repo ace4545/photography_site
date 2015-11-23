@@ -14,9 +14,10 @@
  *= require_self
  */
 body {
-  background-image: url(http://i.imgur.com/ZXGVR9z.jpg);
-  background-size: cover;
-
+  /*background-image: url(http://i.imgur.com/ZXGVR9z.jpg);*/
+  /*background-size: cover;*/
+  background-color: #AA7800
+;
 }
 li {font-family: 'Pinyon Script', cursive;
 
