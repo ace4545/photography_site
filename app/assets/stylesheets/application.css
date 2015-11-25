@@ -14,12 +14,13 @@
  *= require_self
  */
 body {
-  /*background-image: url(http://i.imgur.com/ZXGVR9z.jpg);*/
-  /*background-size: cover;*/
-  background-color: #AA7800
+  background-image: url(http://i.imgur.com/ZXGVR9z.jpg);
+  background-size: cover;
+  /*background-color: #AA7800*/
 ;
 }
 li {font-family: 'Pinyon Script', cursive;
+    float: center;
 
 }
 
@@ -54,9 +55,10 @@ h1 {
   padding: 10px;
   color: purple;
   text-shadow: 1px 1px #ff0000;
-  background-color: #A9A9A9;
+  /*background-color: #CBD4D6;*/
   background-size: 5px auto;
   background-position: inherit;
+
   }
 
 a {
