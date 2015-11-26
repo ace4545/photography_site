@@ -7,6 +7,6 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 Gallery.destroy_all
 Gallery.create([
-  {name: 'Portraits' },
-  {name: 'Weddings' }
+  {name: 'Photos' },
+  {name: 'Photoshoots' }
 ])
