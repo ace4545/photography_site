@@ -14,6 +14,6 @@ class ApplicationController < ActionController::Base
     end
     # Other code above
     def authorize
-      redirect_to login_path, alert: 'Not authorized - you must be logged in!' if current_user.nil?
+      redirect_to login_path, alert: 'Not authorized - you are not an admin or approved person of interest!' if current_user.nil?
     end
 end

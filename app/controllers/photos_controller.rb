@@ -1,15 +1,16 @@
 class PhotosController < ApplicationController
 
-
   def create
-    if current_user.try(:admin?)
-    end
-    @photo = Photo.new(photo_params)
-    @photo.gallery_id = params[:gallery_id]
-    if @photo.save
-      redirect_to gallery_path(params[:gallery_id])
+    if current_user
+     @photo = Photo.new(photo_params)
+     @photo.gallery_id = params[:gallery_id]
+      if @photo.save
+        redirect_to gallery_path(params[:gallery_id])
+     else
+        render 'new'
+      end
     else
-      render 'new'
+      redirect_to root_path
     end
   end
 
